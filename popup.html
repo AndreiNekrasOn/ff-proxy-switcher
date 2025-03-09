@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proxy Type Popup</title>
+    <style>
+body {
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+}
+    </style>
+  </head>
+  <body>
+    <form id="proxy-form">
+      <!-- values match proxy.settings.proxyType possible values -->
+      <input type="radio" id="none" name="proxy-type" value="none">
+      <label for="none">No Proxy</label><br>
+      <input type="radio" id="system" name="proxy-type" value="system">
+      <label for="system">System</label><br>
+      <input type="radio" id="manual" name="proxy-type" value="manual">
+      <label for="manual">Manual</label><br>
+      <input type="radio" id="autoConfig" name="proxy-type" value="autoConfig">
+      <label for="autoConfig">Auto</label><br>
+      <input type="radio" id="autoDetect" name="proxy-type" value="autoDetect">
+      <label for="autoDetect">Auto Detect</label><br>
+    </form>
+    <button id="switch-btn">Switch</button>
+    <p>Allow this extension in Private Mode. <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/proxy/settings">Why?</a><br>
+    For Manual/Auto edit extension preferences.</p>
+    <label id="error-text" style="color: red"></label>
+    <script src="popup.js"></script>
+  </body>
+</html>

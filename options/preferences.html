@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div>
+      <h2>Manual proxy configuration</h2>
+      <label>HTTP Proxy:</label>
+      <input type="text" name="http-proxy"/><br/>
+      <input type="checkbox" name="http-https-proxy"/>
+      <label>Also use this for HTTPS</label><br/>
+      <label>HTTPS Proxy:</label>
+      <input type="text" name="https-proxy"/><br/>
+      <label>Socks Host:</label>
+      <input type="text" name="socks-host"/><br/>
+      <input type="checkbox" name="socks4"/>
+      <label>Use SOCKS4 (default SOCKS5):</label><br/>
+    </div>
+    <div>
+      <h2>Automatic proxy configuration</h2>
+      <label>Automatic Proxy Configuration URL</label>
+      <input type="text" name="auto-proxy"/><br/>
+    </div>
+    <div>
+      <h2>Common</h2>
+      <label>No Proxy for:</label>
+      <textarea name="no-proxy-for"></textarea><br/>
+      <input type="checkbox" name="dont-prompt-auth">Don't prompt for authentication if password is saved<br/>
+      <input type="checkbox" name="proxy-dns-when-using-socks">Proxy DNS when using SOCKS
+    </div>
+    <button id="save-preferences">Save</button>
+    <script src="preferences.js"></script>
+  </body>
+</html>
